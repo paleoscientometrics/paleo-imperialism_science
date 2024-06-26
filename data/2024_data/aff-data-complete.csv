@@ -683,12 +683,13 @@
 43756,"Argentina","Argentina"
 55894,"Brazil",NA
 14593,"Slovenia","Slovenia"
-26197,"Italy;Hungary","Italy"
-26197,"Italy;Hungary","Hungary"
+26197,"Italy","Italy"
+26197,"Italy","Hungary"
+26197,"Hungary","Italy"
+26197,"Hungary","Hungary"
 9152,"Germany","Spain"
 6420,"USA","United States"
 78197,"UK",NA
-73842,"",NA
 11602,"Argentina","Argentina"
 13635,"China","China"
 83118,"USA","United States"
@@ -704,20 +705,27 @@
 3977,"Germany","Germany"
 78726,"Japan",NA
 6458,"Australia","Australia"
-55877,"USA;Switzerland;Germany",NA
+55877,"USA",NA
+55877,"Switzerland",NA
+55877,"Germany",NA
 42175,"Russia",NA
 6789,"UK",NA
-29190,"Sweden;USA",NA
+29190,"Sweden",NA
+29190,"USA",NA
 32453,"Japan","Japan"
 55224,"Australia","New Zealand"
 45340,"India","India"
 32270,"Switzerland","Canada"
 87598,"Australia","Australia"
 8995,"Canada","Canada"
-9317,"Spain;UK;USA",NA
-45083,"Sweden;Russia","Russia"
+9317,"Spain",NA
+9317,"UK",NA
+9317,"USA",NA
+45083,"Sweden","Russia"
+45083,"Russia","Russia"
 85150,"France",NA
-47986,"USA;Spain","Australia"
+47986,"USA","Australia"
+47986,"Spain","Australia"
 55559,"Qatar",NA
 78598,"India","India"
 41887,"Japan","Thailand"
@@ -746,12 +754,14 @@
 12583,"Germany","Germany"
 44552,"Argentina","Argentina"
 48168,"Argentina","Argentina"
-30600,"Hungary;Austria;USA","United States"
+30600,"Hungary","United States"
+30600,"Austria","United States"
+30600,"USA","United States"
 66877,"Germany",NA
-73721,"",NA
-65649,"Russia;USA",NA
-215,"","Egypt"
-78641,"China;Austria","China"
+65649,"Russia",NA
+65649,"USA",NA
+78641,"China","China"
+78641,"Austria","China"
 45894,"USA",NA
 46420,"Argentina","Argentina"
 46464,"Argentina","Argentina"
@@ -762,10 +772,8 @@
 13966,"UK",NA
 19727,"Spain","Spain"
 55128,"Argentina","Argentina"
-9410,"",NA
 9168,"USA","United States"
 2582,"USA","United States"
-80669,"",NA
 45281,"Argentina","Argentina"
 48169,"Argentina","Argentina"
 46576,"Argentina","Argentina"
@@ -775,14 +783,16 @@
 13960,"UK",NA
 8989,"USA","Canada"
 64756,"Japan",NA
-7778,"China;USA","China"
+7778,"China","China"
+7778,"USA","China"
 18999,"Romania",NA
 24764,"Russia","Cyprus"
 42261,"Turkey","Turkey"
 800,"Germany",NA
 57681,"Hungary",NA
 33301,"India","India"
-13571,"Italy;Switzerland","Italy"
+13571,"Italy","Italy"
+13571,"Switzerland","Italy"
 43447,"UK",NA
 78497,"India","Nepal"
 6557,"USA","United States"
@@ -793,26 +803,29 @@
 78640,"India","Bhutan"
 4262,"Germany","United Arab Emirates"
 4262,"Germany","Oman"
-8820,"",NA
 83246,"Spain",NA
 74030,"Switzerland","Italy"
-36450,"France;Croatia","United States"
+36450,"France","United States"
+36450,"Croatia","United States"
 9348,"UK","Lebanon"
-44169,"Italy;Australia;Germany","Italy"
+44169,"Italy","Italy"
+44169,"Australia","Italy"
+44169,"Germany","Italy"
 82875,"UK","Canada"
-8954,"",NA
 41874,"Russia","Russia"
-10118,"Germany;Iran","Iran"
+10118,"Germany","Iran"
+10118,"Iran","Iran"
 77827,"Italy","Italy"
 77565,"China","China"
 43867,"Argentina","Argentina"
-13736,"",NA
-75778,"Russia;USA",NA
+75778,"Russia",NA
+75778,"USA",NA
 77671,"India","India"
 7828,"USA","Colombia"
 45840,"Russia",NA
 49488,"Argentina","Argentina"
-27966,"Brazil;Argentina","Brazil"
+27966,"Brazil","Brazil"
+27966,"Argentina","Brazil"
 80661,"Czech Republic","Czechia"
 72298,"Germany","United States"
 55420,"Germany","Brazil"
@@ -824,8 +837,12 @@
 32745,"Czech Republic","Germany"
 32745,"Czech Republic","Hungary"
 32433,"China","China"
-30606,"South Korea;Canada","Canada"
-35535,"USA;China;Germany;UK","China"
+30606,"South Korea","Canada"
+30606,"Canada","Canada"
+35535,"USA","China"
+35535,"China","China"
+35535,"Germany","China"
+35535,"UK","China"
 13548,"UK",NA
 45845,"Russia",NA
 49056,"Chile","Chile"
@@ -833,38 +850,43 @@
 70346,"USA",NA
 58180,"Argentina",NA
 48162,"Argentina","Argentina"
-34839,"Canada;USA","Canada"
+34839,"Canada","Canada"
+34839,"USA","Canada"
 47464,"India","India"
 30757,"Romania","Romania"
 44594,"Argentina","Argentina"
-50154,"Italy;The Netherlands","Italy"
-32488,"","China"
+50154,"Italy","Italy"
+50154,"The Netherlands","Italy"
 65025,"USA","United States"
 43995,"India","India"
 42469,"Israel","Israel"
 81475,"Poland","Poland"
-59282,"USA;China","China"
+59282,"USA","China"
+59282,"China","China"
 27506,"USA","United States"
 48165,"Argentina","Argentina"
-23357,"Germany;Canada","Canada"
+23357,"Germany","Canada"
+23357,"Canada","Canada"
 81981,"USA","United States"
 27116,"India","India"
 77887,"India","India"
 86054,"The Netherlands","Netherlands"
-13990,"",NA
-32418,"","China"
-24720,"","Spain"
 27428,"Japan",NA
-25689,"Italy;Germany","Austria"
-25689,"Italy;Germany","Italy"
+25689,"Italy","Austria"
+25689,"Italy","Italy"
+25689,"Germany","Austria"
+25689,"Germany","Italy"
 48091,"Argentina","Argentina"
 43936,"Argentina","Argentina"
 49481,"Argentina","Argentina"
-67517,"UK;Croatia;Italy",NA
+67517,"UK",NA
+67517,"Croatia",NA
+67517,"Italy",NA
 19002,"Germany",NA
 59278,"USA",NA
 77546,"China","China"
-34841,"Canada;USA","Canada"
+34841,"Canada","Canada"
+34841,"USA","Canada"
 42028,"Japan","Japan"
 42035,"Japan","Japan"
 42036,"Japan","Japan"
@@ -875,197 +897,185 @@
 59184,"India",NA
 47990,"Argentina","Argentina"
 41888,"Japan","Japan"
-39404,"The Netherlands;Australia",NA
-42039,"Russia;Iran",NA
+39404,"The Netherlands",NA
+39404,"Australia",NA
+42039,"Russia",NA
+42039,"Iran",NA
 76276,"India","India"
 55171,"Argentina",NA
-69075,"Hungary;Poland",NA
+69075,"Hungary",NA
+69075,"Poland",NA
 25284,"Germany","Germany"
 26060,"Italy","Italy"
-27173,"Hungary;Switzerland","Turkey"
+27173,"Hungary","Turkey"
+27173,"Switzerland","Turkey"
 75698,"France","Iran"
 75698,"France","United Arab Emirates"
 75698,"France","China"
 75698,"France","Turkey"
 62018,"Japan","United States"
 42046,"USA","United States"
-87936,"South Korea;Canada;USA","Canada"
+87936,"South Korea","Canada"
+87936,"Canada","Canada"
+87936,"USA","Canada"
 33381,"USA","United States"
-33387,"",NA
 73149,"Japan","Japan"
-41753,"USA;Russia","Iran"
-41753,"USA;Russia","United States"
-48201,"","Argentina"
-55682,"Egypt;UK",NA
-56217,"",NA
-55655,"Egypt;UK",NA
+41753,"USA","Iran"
+41753,"USA","United States"
+41753,"Russia","Iran"
+41753,"Russia","United States"
+55682,"Egypt",NA
+55682,"UK",NA
+55655,"Egypt",NA
+55655,"UK",NA
 77979,"Italy",NA
 41825,"Japan",NA
 48170,"Argentina","Argentina"
-25851,"India;Japan",NA
+25851,"India",NA
+25851,"Japan",NA
 48148,"Argentina","Argentina"
 28473,"USA","United States"
 60830,"Poland","Poland"
 48004,"Argentina","Argentina"
 77867,"Italy","Italy"
-36750,"Japan;Turkey","Turkey"
+36750,"Japan","Turkey"
+36750,"Turkey","Turkey"
 78400,"India","India"
 78400,"India","Nepal"
 77931,"Egypt","Egypt"
-30598,"USA;Norway","Norway"
-52945,"",NA
+30598,"USA","Norway"
+30598,"Norway","Norway"
 48166,"Argentina","Argentina"
 88513,"Mexico","Mexico"
 42116,"Turkey","Turkey"
-45332,"China;USA",NA
+45332,"China",NA
+45332,"USA",NA
 44171,"India","Iraq"
 44171,"India","India"
 47642,"India","India"
 47438,"Slovenia","Slovenia"
 87938,"Japan",NA
-43480,"",NA
 56475,"USA",NA
-49947,"Tunisia;Spain","Spain"
+49947,"Tunisia","Spain"
+49947,"Spain","Spain"
 77613,"India","India"
 77854,"Slovenia","Slovenia"
 65996,"Japan","Japan"
-42242,"Russia;Iran",NA
-80951,"India;USA","India"
+42242,"Russia",NA
+42242,"Iran",NA
+80951,"India","India"
+80951,"USA","India"
 74311,"India","India"
-42537,"China;USA","China"
+42537,"China","China"
+42537,"USA","China"
 57559,"India","India"
-50201,"Italy;The Netherlands","Italy"
+50201,"Italy","Italy"
+50201,"The Netherlands","Italy"
 77849,"Italy","Italy"
 48265,"Argentina",NA
 48265,"Argentina","Argentina"
 48096,"Argentina","Venezuela"
-59226,"India;USA",NA
-44219,"Spain;Italy","Spain"
-55229,"Australia;New Zealand","New Zealand"
+59226,"India",NA
+59226,"USA",NA
+44219,"Spain","Spain"
+44219,"Italy","Spain"
+55229,"Australia","New Zealand"
+55229,"New Zealand","New Zealand"
 42027,"Japan","Japan"
-54760,"Sweden;Australia","Australia"
+54760,"Sweden","Australia"
+54760,"Australia","Australia"
 74730,"India",NA
 74061,"India","India"
 72992,"USA",NA
 42029,"Japan","Japan"
 50684,"Turkey","Turkey"
 49972,"Germany","Germany"
-45274,"","Germany"
-47174,"Slovakia;Czech Republic","Slovakia"
+47174,"Slovakia","Slovakia"
+47174,"Czech Republic","Slovakia"
 54213,"India","India"
 55475,"Egypt",NA
 74246,"India","India"
 46117,"Australia","Timor-Leste"
-78159,"Australia;Italy;Japan","French Polynesia"
+78159,"Australia","French Polynesia"
+78159,"Italy","French Polynesia"
+78159,"Japan","French Polynesia"
 48025,"Argentina","Argentina"
 45888,"Russia",NA
 45937,"Russia",NA
 86131,"Argentina","Argentina"
 69747,"India",NA
-49130,"Australia;China",NA
+49130,"Australia",NA
+49130,"China",NA
 47985,"Argentina","Argentina"
 55901,"Nigeria",NA
-53391,"","Nigeria"
 74237,"India","India"
-66622,"Argentina;USA","Argentina"
+66622,"Argentina","Argentina"
+66622,"USA","Argentina"
 82244,"Iran","Iran"
-81044,"Spain;Ireland;Morocco","Morocco"
+81044,"Spain","Morocco"
+81044,"Ireland","Morocco"
+81044,"Morocco","Morocco"
 47232,"Russia",NA
 58376,"USA",NA
 66522,"Canada",NA
-50781,"",NA
 58374,"USA",NA
-55498,"Egypt;UK",NA
+55498,"Egypt",NA
+55498,"UK",NA
 56172,"Brazil",NA
 77668,"India",NA
 65715,"India",NA
-53749,"Thailand;Australia",NA
-67985,"Argentina;USA","Argentina"
+53749,"Thailand",NA
+53749,"Australia",NA
+67985,"Argentina","Argentina"
+67985,"USA","Argentina"
 77953,"India","India"
 83278,"Russia",NA
-55830,"USA;New Zealand;Philippines;France;UK;Ireland",NA
+55830,"USA",NA
+55830,"New Zealand",NA
+55830,"Philippines",NA
+55830,"France",NA
+55830,"UK",NA
+55830,"Ireland",NA
 67364,"Russia","Russia"
 78046,"India","India"
-69199,"USA;India;The Netherlands",NA
+69199,"USA",NA
+69199,"India",NA
+69199,"The Netherlands",NA
 74174,"Iraq","Iraq"
-80805,"Japan;China; ","Japan"
+80805,"Japan","Japan"
+80805,"China","Japan"
+80805," ","Japan"
 77915,"India","India"
 74642,"Slovakia","Slovakia"
 77930,"India","India"
-42215,"",NA
 80622,"India","India"
 77826,"Croatia","Croatia"
-34827,"",NA
-30388,"","France"
-30388,"","United States"
-30388,"","Canada"
-30388,"",NA
-30388,"","China"
-30388,"","Dominican Republic"
-30388,"","Mexico"
-30388,"","Japan"
-30388,"","New Zealand"
-30388,"","Israel"
-30388,"","United Arab Emirates"
-30388,"","Greece"
-30388,"","Ethiopia"
-30388,"","Madagascar"
-65994,"China;South Korea","South Korea"
-80950,"Nepal;India;Germany","Nepal"
+65994,"China","South Korea"
+65994,"South Korea","South Korea"
+80950,"Nepal","Nepal"
+80950,"India","Nepal"
+80950,"Germany","Nepal"
 80619,"India","Bhutan"
 66908,"Germany","Germany"
-18334,"","Kyrgyzstan"
-18334,"","Canada"
-12820,"","United States"
-12820,"","Oman"
-12820,"","Italy"
-12820,"",NA
-12820,"","Albania"
-12820,"","China"
-12820,"","Thailand"
-12820,"","Germany"
-9940,"","Turkmenistan"
-9940,"","Italy"
-9940,"","Tajikistan"
-9940,"","Germany"
-9940,"","China"
-9159,"","Turkmenistan"
-9159,"","Portugal"
-9159,"","Russia"
-9159,"","Mexico"
-9159,"","Morocco"
-9159,"","Iran"
-9159,"","Denmark"
-9159,"","Romania"
-9159,"","Germany"
-9159,"","United States"
-9159,"","Egypt"
-9159,"","Libya"
-9159,"","Laos"
-9159,"","Bulgaria"
-9159,"","Lithuania"
-9159,"","India"
-9159,"","Saudi Arabia"
-9159,"","Argentina"
-9159,"","Slovakia"
-9159,"","Turkey"
-9159,"","Haiti"
-9159,"","Poland"
-9159,"","Kazakhstan"
-9159,"","Nepal"
-9159,"","Spain"
-9159,"","Hungary"
-9159,"","Italy"
 80621,"India",NA
 80620,"India","Bhutan"
-68533,"Italy;Iran","Iran"
-78267,"Italy;Slovakia","Italy"
-78267,"Italy;Slovakia","France"
-78267,"Italy;Slovakia","Czechia"
-78267,"Italy;Slovakia","Spain"
+68533,"Italy","Iran"
+68533,"Iran","Iran"
+78267,"Italy","Italy"
+78267,"Italy","France"
+78267,"Italy","Czechia"
+78267,"Italy","Spain"
+78267,"Slovakia","Italy"
+78267,"Slovakia","France"
+78267,"Slovakia","Czechia"
+78267,"Slovakia","Spain"
 85198,"Palestine","Egypt"
 72895,"USA",NA
-75505,"Russia;UK;Poland;Denmark",NA
+75505,"Russia",NA
+75505,"UK",NA
+75505,"Poland",NA
+75505,"Denmark",NA
 88435,"Argentina","Argentina"
-81956,"USA;Canada","United States"
+81956,"USA","United States"
+81956,"Canada","United States"
 85994,"Argentina","Argentina"

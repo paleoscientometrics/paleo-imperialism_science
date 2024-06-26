@@ -51,6 +51,11 @@ dat2 <- dat2 %>%
   ungroup() %>% 
   select(reference_no, aff_country)
 
+dat2 <- dat2 %>% 
+  select(reference_no, aff_country) %>% 
+  mutate(aff_country = strsplit(aff_country, ";")) %>% 
+  tidyr::unnest(cols = aff_country) 
+
 ## ****************************************************
 ## Merge data
 ## ****************************************************
@@ -73,4 +78,3 @@ df <- dat %>%
   left_join(pbdb, by = "reference_no")
 
 write.csv(df, "data/2024_data/aff-data-complete.csv", row.names = FALSE)
-s

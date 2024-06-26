@@ -27,8 +27,7 @@ library(rworldmap)
 pbdb <- readRDS("data/2024_data/pbdb_data.rds")
 completed_refs <- read.csv("data/2024_data/aff-data-complete.csv")
 
-pbdb <- pbdb %>% 
-  filter(reference_no %in% completed_refs$reference_no)
+pbdb <- pbdb[pbdb$reference_no %in% completed_refs$reference_no,]
 
 # Find countries for those not in there -----------------------------------
 
