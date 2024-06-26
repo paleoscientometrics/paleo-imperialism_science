@@ -98,4 +98,4 @@ write.csv(dat_doi, "output/2024_data/aff_doi.csv", row.names = FALSE)
 
 dat_todo <- anti_join(dat_raw, dat_doi, by = "reference_no")
 
-write.csv(dat_todo, "output/data_nodoi.csv", row.names = FALSE)
+write.csv(dat_todo, "output/2024_data/data_nodoi.csv", row.names = FALSE)

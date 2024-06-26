@@ -1,6 +1,6 @@
 ## **********************************
 ##
-## Project: Project
+## Project: Science update
 ##
 ## Purpose of script: To get the dois of the publications that don't have them in the db
 ##
