@@ -21,13 +21,12 @@
 library(sp)
 library(spdep)
 library(rworldmap)
+library(dplyr)
 
 # Load data -----------------------------------------------------------
 
 pbdb <- readRDS("data/2024_data/pbdb_data.rds")
 completed_refs <- read.csv("data/2024_data/aff-data-complete.csv")
-
-pbdb <- pbdb[pbdb$reference_no %in% completed_refs$reference_no,]
 
 # Find countries for those not in there -----------------------------------
 
@@ -69,22 +68,38 @@ for (i in 1:nrow(no_countries)){
 pbdb$country <- countrycode::countrycode(pbdb$cc, origin="iso2c", destination = "country.name")
 pbdb$country[pbdb$cc=="UK"] <- "United Kingdom"
 pbdb$country[pbdb$cc=="AA"] <- "Antarctica"
-pbdb$country[pbdb$cc=="FA"] <- "Faroe Islands"
+# pbdb$country[pbdb$cc=="FA"] <- "Faroe Islands"
 pbdb$country[pbdb$country=="United States Minor Outlying Islands (the)"] <- "United States"
 
-# Make corrections to mistakes --------------------------------------------
+# Merge pbdb
+pbdb <- bind_rows(pbdb_old, pbdb[, names(pbdb_old)])
 
-completed_refs$aff_country <- plyr::mapvalues(completed_refs$aff_country, 
-											  c("Brasil", "Chi", "Columbia", "Denkmark", "ISA", "Morroco", "Northern Ireland", "Phillipines", "Yemen Arab Republic", "Pland", "Rondebosch"),
-											  c("Brazil", "China", "Colombia", "Denmark", "USA", "Morocco", "UK", "Philippines", "Yemen", "Poland", "South Africa"))
+# Checking dups
+pbdb %>% filter(reference_no ==  "43480") # 0
+pbdb %>% filter(reference_no == "33387") # 0
 
-completed_refs$aff_country[completed_refs$reference_no=="74387"] <- c("Argentina", "Peru","France")
+pbdb <- pbdb[pbdb$reference_no %in% completed_refs$reference_no,]
+
+# Make corrections --------------------------------------------
 
 temp <- completed_refs
-temp <- temp[!temp$samp_country %in% c("", "ODP Site"),]
-n <- grep("Cura.+", temp$samp_country)
-temp$samp_country[n] <- "Curacao"
+temp <- temp[!temp$samp_country %in% c("", " ", "ODP Site"),]
+temp <- temp[!temp$aff_country %in% c("", " ", "ODP Site"),]
 
+# add no countries data
+temp <- left_join(completed_refs, 
+                 pbdb[, c("reference_no", "country")], by = "reference_no") %>% 
+  distinct()
+
+temp <- temp %>% 
+  mutate(samp_country = ifelse(is.na(samp_country), country, samp_country)) %>% 
+  select(-country)
+
+temp %>% filter(is.na(samp_country)) %>% 
+  distinct(reference_no) # emma, can you check if these are not connected to occurrences? maybe choose a couple of them
+
+temp <- temp %>% 
+  filter(!is.na(samp_country)) # remove NAs
 
 # Recode country to ISO3 --------------------------------------------------
 
@@ -94,9 +109,15 @@ temp$aff_code <- countrycode::countrycode(temp$aff_country, origin="country.name
 temp$aff_country <- countrycode::countrycode(temp$aff_code, origin = "iso3c", destination = "country.name")
 temp$samp_country <- countrycode::countrycode(temp$samp_code, origin = "iso3c", destination = "country.name")
 
-completed_refs <- temp
+new_refs <- temp
 
 # Save data ---------------------------------------------------------------
 
-saveRDS(pbdb[,c("collection_no", "lng", "lat", "reference_no", "country", "cc")], file="data/pbdb.rds")
-save(all_refs, completed_refs, file="data/refs.RData")
+saveRDS(pbdb[,c("collection_no", "lng", "lat", "reference_no", "country", "cc")], file="data/2024_data/2024_pbdb.rds")
+
+# merge with old data
+
+load("data/refs.RData")
+
+completed_refs <- bind_rows(completed_refs, new_refs)
+save(completed_refs, file="data/2024_data/2024_refs.RData")

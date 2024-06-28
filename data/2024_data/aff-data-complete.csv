@@ -774,6 +774,7 @@
 55128,"Argentina","Argentina"
 9168,"USA","United States"
 2582,"USA","United States"
+80669,"Germany",NA
 45281,"Argentina","Argentina"
 48169,"Argentina","Argentina"
 46576,"Argentina","Argentina"
@@ -803,6 +804,7 @@
 78640,"India","Bhutan"
 4262,"Germany","United Arab Emirates"
 4262,"Germany","Oman"
+8820,"USA",NA
 83246,"Spain",NA
 74030,"Switzerland","Italy"
 36450,"France","United States"
@@ -812,12 +814,17 @@
 44169,"Australia","Italy"
 44169,"Germany","Italy"
 82875,"UK","Canada"
+8954,"France",NA
+8954,"USA",NA
 41874,"Russia","Russia"
 10118,"Germany","Iran"
 10118,"Iran","Iran"
 77827,"Italy","Italy"
 77565,"China","China"
 43867,"Argentina","Argentina"
+13736,"France",NA
+13736,"Romania",NA
+13736,"Canada",NA
 75778,"Russia",NA
 75778,"USA",NA
 77671,"India","India"
@@ -857,6 +864,8 @@
 44594,"Argentina","Argentina"
 50154,"Italy","Italy"
 50154,"The Netherlands","Italy"
+32488,"Japan","China"
+32488,"China","China"
 65025,"USA","United States"
 43995,"India","India"
 42469,"Israel","Israel"
@@ -871,6 +880,10 @@
 27116,"India","India"
 77887,"India","India"
 86054,"The Netherlands","Netherlands"
+13990,"UK",NA
+32418,"Japan","China"
+32418,"China","China"
+24720,"Germany","Spain"
 27428,"Japan",NA
 25689,"Italy","Austria"
 25689,"Italy","Italy"
@@ -926,6 +939,8 @@
 41753,"Russia","United States"
 55682,"Egypt",NA
 55682,"UK",NA
+56217,"Egypt",NA
+56217,"UK",NA
 55655,"Egypt",NA
 55655,"UK",NA
 77979,"Italy",NA
@@ -945,6 +960,8 @@
 77931,"Egypt","Egypt"
 30598,"USA","Norway"
 30598,"Norway","Norway"
+52945,"UK",NA
+52945,"Germany",NA
 48166,"Argentina","Argentina"
 88513,"Mexico","Mexico"
 42116,"Turkey","Turkey"
@@ -990,6 +1007,8 @@
 42029,"Japan","Japan"
 50684,"Turkey","Turkey"
 49972,"Germany","Germany"
+45274,"UK","Germany"
+45274,"Germany","Germany"
 47174,"Slovakia","Slovakia"
 47174,"Czech Republic","Slovakia"
 54213,"India","India"
@@ -1018,6 +1037,8 @@
 47232,"Russia",NA
 58376,"USA",NA
 66522,"Canada",NA
+50781,"Japan",NA
+50781,"Vietnam",NA
 58374,"USA",NA
 55498,"Egypt",NA
 55498,"UK",NA
@@ -1044,7 +1065,6 @@
 74174,"Iraq","Iraq"
 80805,"Japan","Japan"
 80805,"China","Japan"
-80805," ","Japan"
 77915,"India","India"
 74642,"Slovakia","Slovakia"
 77930,"India","India"

@@ -53,7 +53,7 @@ dat2 <- dat2 %>%
 
 dat2 <- dat2 %>% 
   select(reference_no, aff_country) %>% 
-  mutate(aff_country = strsplit(aff_country, ";")) %>% 
+  mutate(aff_country = strsplit(trimws(aff_country), ";")) %>% 
   tidyr::unnest(cols = aff_country) 
 
 ## ****************************************************
